@@ -37,7 +37,7 @@ public class UserController {
     	final BindingResult bindingResult, final Model model) {
     	
         userValidator.validate(userForm, bindingResult);
-        if (bindingResult.hasErrors()) {
+        if (bindingResult.hasErrors()) 
             return "registration";
         }
         System.out.println("User PWD:"+userForm.getPassword());
@@ -50,7 +50,7 @@ public class UserController {
     /** {@inheritDoc} */
     @RequestMapping(value = "/login", method = RequestMethod.GET)
     public final String login(final Model model, final String error, final String logout) {
-        if (error != null){
+        if (error != null)
             model.addAttribute("error", "Your username and password is invalid.");
         }
         if (logout != null){
@@ -67,5 +67,5 @@ public class UserController {
     @RequestMapping(value = { "/index"} , method = RequestMethod.GET)
     public final String indexHome(final Model model) {
         return "index_home";
-    }
+    
 }
