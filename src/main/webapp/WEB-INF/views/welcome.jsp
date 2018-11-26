@@ -466,11 +466,9 @@
 </div>
 <script type="text/javascript">
 $(function () {
-	  $('[data-toggle="tooltip"]').tooltip()
-	})
-	$(function () {
-	  $('[data-toggle="popover"]').popover()
-	})
+	  )
+	$(function () .popover()
+	
 </script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 <script src="${contextPath}/resources/js/bootstrap.min.js"></script>
